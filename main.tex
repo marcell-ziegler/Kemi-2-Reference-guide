@@ -16,6 +16,10 @@
 \usepackage{enumitem}
 \renewcommand{\labelitemii}{$\circ$}
 
+\makeatletter
+  \@addtoreset{section}{part}
+\makeatother 
+
 \theoremstyle{definition}
 \newtheorem{exm}{Exempel}
 
@@ -28,7 +32,7 @@
         \vfill
         
         \begin{center}
-            \textbf{OBS!} Alla siffror/refenser som verkar vara länkar är länkar, \\ tryck gärna!
+            \textbf{OBS!} Alla siffror/refenser som verkar/borde vara länkar är \\ antagligen länkar, tryck gärna!
         \end{center}
     \end{titlepage}
 
