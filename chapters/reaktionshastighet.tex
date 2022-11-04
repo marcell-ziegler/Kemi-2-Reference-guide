@@ -21,7 +21,7 @@ En högre koncentration gör partiklarna tätare vilket i sin tur leder till sna
 \subsection{Endoterm och exoterm}
 En reaktion kan vara endo- eller exoterm. En endoterm reaktion kräver energi medan en exoterm reaktion avger ett överskott av energi\footnote{se s. 32--33 i boken}.
 
-\subsection{Entalpi}
+\subsection{Entalpi och aktiveringsenergi}
     
 \begin{figure*}[h]
     \centering
@@ -31,8 +31,16 @@ En reaktion kan vara endo- eller exoterm. En endoterm reaktion kräver energi me
         \draw [very thick,rounded corners=12pt] (0,2.5) node[anchor=south west] {Reaktanter} -- (5.2,2.5) -- (7, 4.5) node[anchor=south] {Aktiverat komplex} -- (9,1) -- (11,1) node[anchor=north east] {Produckter};
         \draw [dashed,very thick,color=red] (0,4.3) -- (7,4.3);
         \draw [dashed,very thick] (0,1) -- (10.5,1);
-        \draw [ultra thick,<->,color=red] (4.5,1) -- (4.5,2.5) node[anchor=north east] {$E_a = \text{Aktiveringsenergi}$} -- (4.5,4.3);
-        \draw [very thick, dashed, color=cyan] (5,2.5) -- (7.6,2.5);
-        \draw [ultra thick, <->, color=cyan] (7.6,1) -- (7.6,1.75) node[anchor=east] {$\Delta H =\text{Entalpi}$} -- (7.6,2.5);
+        \draw [ultra thick,<->,color=red] (4.5,2.5) -- (4.5,3.4) node[anchor=east] {$E_a = \text{Aktiveringsenergi}$} -- (4.5,4.3);
+        \draw [very thick, dashed, color=cyan] (5,2.5) -- (7,2.5);
+        \draw [ultra thick, <->, color=cyan] (7,1) -- (7,1.75) node[anchor=east] {$\Delta H =\text{Entalpi}$} -- (7,2.5);
     \end{tikzpicture}
 \end{figure*}
+
+\noindent Denna graf visar förloppet av en reaktion uttryckt som energiförändring över tid. Energin är mätt i enheten $\mathrm{kJ/mol}$ som på sätt och vis uttrycker energikoncentration baserat på substansmängd vilket kallas \emph{entalpi}\footnote{se s. 32--36 samt uppgift 2:11 i boken}. När man säger entalpi menar man ofta förändringen i entalpi som uttrycks $\Delta H$. Detta visar om det har avgetts eller absorberats energi under reaktionens gång:
+\begin{align*}
+    \Delta H < 0 &\Rightarrow \text{exoterm reaktion, energi avges} \\
+    \Delta H > 0 &\Rightarrow \text{endoterm reatkion, energi absorberas}
+\end{align*}
+
+På grafen kan vi även den så kallade \emph{aktiveringsenergin} $E_a$. Denna energi är är skillnaden mellan den ursprungliga energinivån av reaktanterna och den mängd energi som krävs för att reaktionen ska ske. Man kan resonera kring aktiveringsenergi från båda hållen i diagrammet. Just nu finns bara det högra hållet inritat, men i jämvikter går ju det åt båda håll och därmed finns det värde även i produkt $\rightarrow$ reaktant resonemanget.
