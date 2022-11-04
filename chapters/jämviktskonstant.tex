@@ -1,18 +1,19 @@
 \section{Jämviktskonstanten}
 
-Varje kemisk jämvikt har en s.k. jämviktskonstant $K$. Detta beräknas enligt denna formel\footnote{Se s. 42--48 samt uppgift 3:1--3:3} ($n_{prod} = \text{antal produkter och } n_{reakt} = \text{antal reaktanter}$):
-\begin{gather*}
+Varje kemisk jämvikt har en s.k. jämviktskonstant $K$. Den beräknas enligt följande formel\footnote{Se s. 42--48 samt uppgift 3:1--3:3}:
+\begin{equation*}
     \label{eq:jmvkonstant}
-    K = \frac{\prod_{n=1}^{n_{prod}}[\mathrm{produkt}_n]}{\prod_{n=1}^{n_{reakt}}[\mathrm{reaktant}_n]} \\
-    \text{alltså\ldots} \\
+    K = \frac{\prod_{n=1}^{n_{prod}}[\mathrm{produkt}_n]}{\prod_{n=1}^{n_{reakt}}[\mathrm{reaktant}_n]}
+\end{equation*}
+alltså\ldots
+\begin{equation*}
     K = \frac{[\mathrm{produkt}_1] \cdot [\mathrm{produkt}_2] \dotsm [\mathrm{produkt}_{n_{prod}}]}{[\mathrm{reaktant}_1] \cdot [\mathrm{reaktant}_2] \dotsm [\mathrm{reaktant}_{n_{reakt}}]}
-\end{gather*}
-$K$ visar alltså förhållandet mellan produkterna av koncentrationerna av produkter och reaktanter. Detta leder även till dessa två till slutsatser:
+\end{equation*}
+där $n_{prod} = \text{antal produkter och } n_{reakt} = \text{antal reaktanter}$. $K$ visar förhållandet mellan produkterna av koncentrationerna av produkterna och reaktanterna. Detta leder även till dessa två till slutsatser:
 \begin{align*}
     \text{större } K \Rightarrow \text{mindre reakt. eller mer prod. i jämförelse} \\
     \text{mindre } K \Rightarrow \text{mer reakt. eller mindre prod. i jämförelse} 
 \end{align*}
-\pagebreak
 \begin{exm}
     Vid jämvikt finns det $ \mathrm{0.045\,M} \ \ce{H2O},\ \mathrm{0.005\,M} \ \ce{H2} \text{ och } \mathrm{0.0025\,M} \ \ce{O2}$ i reaktionen
     \begin{equation*}
@@ -20,29 +21,28 @@ $K$ visar alltså förhållandet mellan produkterna av koncentrationerna av prod
     \end{equation*}
     Sätter man in siffrorna får man
     \begin{equation*}
-        K = \frac{\mathrm{[H_2O]^2 \cdot [O_2]}}{\mathrm{[H_2O]^2}} \approx 2.78 \cdot 10^{-4} \, \mathrm{M}
+        K = \frac{\mathrm{[H_2]^2 \cdot [O_2]}}{\mathrm{[H_2O]^2}} = \frac{0.005^2\,\mathrm{M^2} \cdot 0.025\,\mathrm{M}}{0.045^2\,\mathrm{M^2}} \approx 3.09 \cdot 10^{-4} \, \mathrm{M}
     \end{equation*}
     Lägg märke till att vissa koncentrationer är upphöjda till en exponent. Denna exponent är alltid samma som ämnets koefficient i reaktionen. \\ $\ce{2H2O \rightarrow [H2O]^2}$ exempelvis.
 \end{exm}
 
 \subsection{Enheten på \textit{K}}
 
-Detta beräknas med en enhetsanalys på koncentrationerna\footnote{Se uppgift 3:4}.
+Den beräknas med en enhetsanalys på koncentrationerna\footnote{Se uppgift 3:4}.
 
 \begin{exm}
     Givet situationen från ovan, sätt in enheter:
     \begin{equation*}
-        K \approx 2.78 \cdot 10^{-4} \mathrm{ \left[\frac{M^2 \cdot M}{M^2} = \frac{M^{\cancelto{1}{3}}}{M^{\cancel{2}}} = M\right]}
+        K \approx 3.09 \cdot 10^{-4} \mathrm{ \left[\frac{M^2 \cdot M}{M^2} = \frac{M^{\cancelto{1}{3}}}{M^{\cancel{2}}} = M\right]}
     \end{equation*}
 \end{exm}
 
 \subsection{Räkna på \textit{K}}
 \label{sec:räknak}
-Du ska kunna räkna ut $K$ för en viss reaktion utifrån ett fåtal substansmängder eller koncentrationer\footnote{Se s. 48--49 samt uppgift 3:7}.
+Du ska kunna räkna ut $K$ för en viss reaktion utifrån ett fåtal substansmängder eller koncentrationer\footnote{Se s. 48--49 samt uppgift 3:7}. Detta kan utföras genom att resonera kring de olika ämnenas koncentrationer mycket likt hur vi räknade på begränsande reaktanter i Kemi 1.
 
 \begin{exm}
-    Titta på exemplet i denna tabell ($C_0$ är koncentration från början och $C_{jmv}$ är koncentration vid jmv.):
-    
+    Titta på följande tabell:
     \begin{table}[H]
         \centering
         \begin{tabular}{|c|c|>{\centering\arraybackslash}m{31.5pt}|c|} 
@@ -58,30 +58,30 @@ Du ska kunna räkna ut $K$ för en viss reaktion utifrån ett fåtal substansmä
         \end{tabular}
     \end{table}
     
-    \noindent vilket ger att
+    \noindent $C_0$ är koncentrationen från början och $C_{jmv}$ är koncentrationen vid jmv. Av detta följer att
     
     \begin{equation*}
         K = \frac{[\mathrm{AB}]}{\mathrm{[A] \cdot [B]}} = \frac{y}{(x-y)^2} \, \mathrm{\left[\frac{M}{M^2}=M^{-1}\right]}
     \end{equation*}
     
-    Notera att förhållendet mellan $\Delta C$ hos de olika ämnen är densamma som deras koefficient i rekationen så följande gäller i mer komplexa fall:
+    \noindent Notera att förhållendet mellan $\Delta C$ hos de olika ämnen är densamma som deras koefficient i rekationen så följande gäller i mer komplexa fall:
     
     \begin{table}[H]
         \centering
         \begin{tabular}{|c|c|>{\centering\arraybackslash}m{40pt}|c|} 
         \cline{2-4}
-        \multicolumn{1}{l|}{} & \multicolumn{3}{c|}{$\ce{\hspace{5pt} 2A \hspace{6pt} + \hspace{13pt} B \hspace{5pt} <=> \hspace{2pt} A2B} \hspace{15pt}$}  \\ 
+        \multicolumn{1}{l|}{} & \multicolumn{3}{c|}{$\ce{\hspace{5pt} $n$A \hspace{6pt} + \hspace{13pt} B \hspace{5pt} <=> \hspace{2pt} A_nB} \hspace{15pt}$}  \\ 
         \hline
         $C_0$                 & $z$   & $x$   & $0$                       \\ 
         \hline
-        $\Delta C$            & $-2y$  & $-y$  & $+y$                      \\ 
+        $\Delta C$            & $-ny$  & $-y$  & $+y$                      \\ 
         \hline
-        $C_{jmv}$             & $z-2y$ & $x-y$ & $y$                       \\
+        $C_{jmv}$             & $z-ny$ & $x-y$ & $y$                       \\
         \hline
         \end{tabular}
     \end{table}
     
     \begin{equation*}
-        K = \frac{[\mathrm{AB}]}{\mathrm{[A] \cdot [B]}} = \frac{y}{(z-2y) \cdot (x-y)} \, \mathrm{\left[\frac{M}{M^2}=M^{-1}\right]}
+        K = \frac{[\mathrm{A}_n\mathrm{B}]}{[\mathrm{A}]^n \cdot [\mathrm{B}]} = \frac{y}{(z-ny)^n \cdot (x-y)} \, \mathrm{\left[\frac{M}{M^2}=M^{-1}\right]}
     \end{equation*}
 \end{exm}
