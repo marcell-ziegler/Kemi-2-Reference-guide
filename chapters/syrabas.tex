@@ -49,3 +49,14 @@ Man räknar på dessa konstanter ungefär som man räknar med $K$ (se \vref{sec:
 
 \subsection{Joner som syra eller bas}
 Ibland kan vissa joner från olika salter agera som syror eller baser. Man kan bestämma detta genom att dela upp saltet i dess beståndsdelar. Efter denna uppdelning kan man kolla upp $K_a$ och $K_b$ för dessa joner och avgöra om de reagerar som syra/bas och vilket av dem isåfall. Därefter är logiken för pH exakt samma som för ''vanliga'' syror.
+
+\section{Titrering}
+Titrering är ett sätt att ta reda på olika egenskaper hos en syra eller en bas. Man kan exempelvis beräkna mängden kristallvatten, pH, $K_a$ eller $K_b$ från en titrering. Processen går ut på att man placerar någonting i en vattenlösning och i denna lösningen droppar man in en annan med en byrett. 
+\begin{figure*}[h]
+    \centering
+    \begin{tikzpicture}[scale=1.5, every node/.style=[scale=1.5]]
+        \fill[thick, domain=-0.2:0.2, color=cyan!80!blue, fill opacity=0.4] (-0.2,-3) -- plot [samples=50] (\x, {0.03*sin((40*\x) r)-1}) [rounded corners=1.5pt] -- (0.2,-3)  -- (0.08,-3) -- (0.04,-3.3) -- (0,-3.32) -- (-0.04,-3.3) -- (-0.08,-3) -- cycle;
+        \draw[very thick, domain=-0.2:0.2, color=cyan!80!blue] plot [samples=50] (\x, {0.03*sin((40*\x) r)-1});
+        \draw[thick, rounded corners=1.5pt] (-0.2,0) -- (-0.2, -3) -- (-0.08,-3) -- (-0.04,-3.3) -- (0,-3.32) -- (0.04,-3.3) -- (0.08,-3) -- (0.2,-3) -- (0.2, 0) -- cycle;
+    \end{tikzpicture}
+\end{figure*}
