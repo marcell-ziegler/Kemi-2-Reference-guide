@@ -53,10 +53,39 @@ Ibland kan vissa joner från olika salter agera som syror eller baser. Man kan b
 \section{Titrering}
 Titrering är ett sätt att ta reda på olika egenskaper hos en syra eller en bas. Man kan exempelvis beräkna mängden kristallvatten, pH, $K_a$ eller $K_b$ från en titrering. Processen går ut på att man placerar någonting i en vattenlösning och i denna lösningen droppar man in en annan med en byrett. 
 \begin{figure*}[h]
+    \def\radius{2pt}
+    \def\scale{2}
     \centering
-    \begin{tikzpicture}[scale=1.5, every node/.style=[scale=1.5]]
-        \fill[thick, domain=-0.2:0.2, color=cyan!80!blue, fill opacity=0.4] (-0.2,-3) -- plot [samples=50] (\x, {0.03*sin((40*\x) r)-1}) [rounded corners=1.5pt] -- (0.2,-3)  -- (0.08,-3) -- (0.04,-3.3) -- (0,-3.32) -- (-0.04,-3.3) -- (-0.08,-3) -- cycle;
-        \draw[very thick, domain=-0.2:0.2, color=cyan!80!blue] plot [samples=50] (\x, {0.03*sin((40*\x) r)-1});
-        \draw[thick, rounded corners=1.5pt] (-0.2,0) -- (-0.2, -3) -- (-0.08,-3) -- (-0.04,-3.3) -- (0,-3.32) -- (0.04,-3.3) -- (0.08,-3) -- (0.2,-3) -- (0.2, 0) -- cycle;
+    \begin{tikzpicture}[scale=\scale, every path/.style={rounded corners=\radius}]
+        \coordinate (origin) at (0,0);
+        \def\byrettwidth{0.2}
+        \def\wateroffset{1}
+        \coordinate (waterline) at (0,-\wateroffset);
+        \def\byrettlength{2.85}
+        \coordinate (bottom) at (0,-\byrettlength);
+        \def\tiptopwidth{0.08}
+        \def\tipbottomwidth{0.03}
+        \def\tiplength{0.3}
+        \coordinate (tip) at ($(bottom)+(0,-\tiplength)$);
+
+        % wave
+        \draw[very thick, domain=-\byrettwidth:\byrettwidth, color=cyan!80!blue] plot [samples=50, sharp corners] (\x, {0.03*sin((40*\x) r)-\wateroffset});
+        % water fill
+        \fill[color=cyan!80!blue, fill opacity=0.4] plot [samples=50, sharp corners, domain=-\byrettwidth:\byrettwidth] (\x, {0.03*sin((40*\x) r)-\wateroffset}) [rounded corners=\radius] -- ($(bottom)+(\byrettwidth,0)$) -- ($(bottom)+(\tiptopwidth,0)$) -- ($(tip)+(\tipbottomwidth,0)$) -- ($(tip)+(-\tipbottomwidth,0)$) -- ($(bottom)+(-\tiptopwidth,0)$) -- ($(bottom)+(-\byrettwidth,0)$) [sharp corners] -- cycle;
+        % shape
+        \draw[thick] ($(origin)+(-\byrettwidth,0)$) -- ($(origin)+(\byrettwidth,0)$) -- ($(bottom)+(\byrettwidth,0)$) -- ($(bottom)+(\tiptopwidth,0)$) -- ($(tip)+(\tipbottomwidth,0)$) -- ($(tip)+(-\tipbottomwidth,0)$) -- ($(bottom)+(-\tiptopwidth,0)$) -- ($(bottom)+(-\byrettwidth,0)$) -- cycle;
+        % tickmarks
+        \def\tickdist{2.95}
+        \foreach \x in {0.05,0.3,...,\tickdist}
+          \draw[color=red!80!black] ($(-\byrettwidth,-\x)+(0.05,0)$) -- ($(\byrettwidth,-\x)-(0.05,0)$);
+        \foreach \y in {0.1,0.35,...,2.7}
+        {
+            \pgfmathsetmacro\yoffset{\y+0.05}
+            \pgfmathsetmacro\yend{\y+0.2}
+            \foreach \z in {\y,\yoffset,...,\yend} 
+              \draw[color=red!80!black] ($(-\byrettwidth, -\z)+(0.1,0)$) -- ($(\byrettwidth, -\z)-(0.1,0)$);
+        }
+        \foreach \t in {0,0.3,...,1}
+          \filldraw[very thick, color=cyan!80!blue, fill opacity=0.4, rounded corners=0.2pt, make snapshot of=\t] :yshift = {0s = "0cm", 1s = "-1.5cm"} ($(tip)+(0,-0.05)$) .. controls ($(tip)+(-0.1,-0.2)$) and ($(tip)+(0.1,-0.2)$) .. cycle;
     \end{tikzpicture}
 \end{figure*}
