@@ -51,12 +51,10 @@ Man räknar på dessa konstanter ungefär som man räknar med $K$ (se \vref{sec:
 Ibland kan vissa joner från olika salter agera som syror eller baser. Man kan bestämma detta genom att dela upp saltet i dess beståndsdelar. Efter denna uppdelning kan man kolla upp $K_a$ och $K_b$ för dessa joner och avgöra om de reagerar som syra/bas och vilket av dem isåfall. Därefter är logiken för pH exakt samma som för ''vanliga'' syror.
 
 \section{Titrering}
-Titrering är ett sätt att ta reda på olika egenskaper hos en syra eller en bas. Man kan exempelvis beräkna mängden kristallvatten, pH, $K_a$ eller $K_b$ från en titrering. Processen går ut på att man placerar någonting i en vattenlösning och i denna lösningen droppar man in en annan med en byrett. 
-\begin{figure*}[h]
-    \def\radius{2pt}
-    \def\scale{1.4}
-    \centering
-    \tcbox{\begin{tikzpicture}[scale=\scale, every path/.style={rounded corners=\radius}]
+\begin{wrapfigure}{l}{2cm}
+    \vspace{-0.8cm}
+    % \centering
+    \tcbox{\begin{tikzpicture}[scale=0.6, every path/.style={rounded corners=0.5pt}]
         \coordinate (origin) at (0,0);
         \def\byrettwidth{0.2}
         \def\wateroffset{1}
@@ -69,24 +67,24 @@ Titrering är ett sätt att ta reda på olika egenskaper hos en syra eller en ba
         \coordinate (tip) at ($(bottom)+(0,-\tiplength)$);
 
         % wave
-        \draw[very thick, domain=-\byrettwidth:\byrettwidth, color=cyan!80!blue] plot [samples=50, sharp corners] (\x, {0.015*sin((40*\x) r)-\wateroffset});
+        \draw[thick, domain=-\byrettwidth:\byrettwidth, color=cyan!80!blue] plot [samples=50, sharp corners] (\x, {0.015*sin((40*\x) r)-\wateroffset});
         % water fill
-        \fill[color=cyan!80!blue, fill opacity=0.4] plot [samples=50, sharp corners, domain=-\byrettwidth:\byrettwidth] (\x, {0.015*sin((40*\x) r)-\wateroffset}) [rounded corners=\radius] -- ($(bottom)+(\byrettwidth,0)$) -- ($(bottom)+(\tiptopwidth,0)$) -- ($(tip)+(\tipbottomwidth,0)$) -- ($(tip)+(-\tipbottomwidth,0)$) -- ($(bottom)+(-\tiptopwidth,0)$) -- ($(bottom)+(-\byrettwidth,0)$) [sharp corners] -- cycle;
+        \fill[color=cyan!80!blue, fill opacity=0.4] plot [samples=50, sharp corners, domain=-\byrettwidth:\byrettwidth] (\x, {0.015*sin((40*\x) r)-\wateroffset}) [rounded corners=0.5pt] -- ($(bottom)+(\byrettwidth,0)$) -- ($(bottom)+(\tiptopwidth,0)$) -- ($(tip)+(\tipbottomwidth,0)$) -- ($(tip)+(-\tipbottomwidth,0)$) -- ($(bottom)+(-\tiptopwidth,0)$) -- ($(bottom)+(-\byrettwidth,0)$) [sharp corners] -- cycle;
         % shape
         \draw[thick] ($(origin)+(-\byrettwidth,0)$) -- ($(origin)+(\byrettwidth,0)$) -- ($(bottom)+(\byrettwidth,0)$) -- ($(bottom)+(\tiptopwidth,0)$) -- ($(tip)+(\tipbottomwidth,0)$) -- ($(tip)+(-\tipbottomwidth,0)$) -- ($(bottom)+(-\tiptopwidth,0)$) -- ($(bottom)+(-\byrettwidth,0)$) -- cycle;
         % tickmarks
         \def\tickdist{2.95}
         \foreach \x in {0.05,0.3,...,\tickdist}
-          \draw[color=red!80!black] ($(-\byrettwidth,-\x)+(0.05,0)$) -- ($(\byrettwidth,-\x)-(0.05,0)$);
+          \draw[color=red!80!black, thin] ($(-\byrettwidth,-\x)+(0.05,0)$) -- ($(\byrettwidth,-\x)-(0.05,0)$);
         \foreach \y in {0.1,0.35,...,2.7}
         {
             \pgfmathsetmacro\yoffset{\y+0.05}
             \pgfmathsetmacro\yend{\y+0.2}
             \foreach \z in {\y,\yoffset,...,\yend} 
-              \draw[color=red!80!black] ($(-\byrettwidth, -\z)+(0.1,0)$) -- ($(\byrettwidth, -\z)-(0.1,0)$);
+              \draw[color=red!80!black, very thin] ($(-\byrettwidth, -\z)+(0.1,0)$) -- ($(\byrettwidth, -\z)-(0.1,0)$);
         }
         \foreach \t in {0,0.3,...,1}
-          \filldraw[very thick, color=cyan!80!blue, fill opacity=0.4, rounded corners=0.2pt] ($(tip)+(0,-\t)+(0,-0.05)$) .. controls ($(tip)+(-0.1,-0.2)+(0,-\t)$) and ($(tip)+(0.1,-0.2)+(0,-\t)$) .. cycle;
+          \filldraw[thick, color=cyan!80!blue, fill opacity=0.4, rounded corners=0.2pt] ($(tip)+(0,-\t)+(0,-0.05)$) .. controls ($(tip)+(-0.1,-0.2)+(0,-\t)$) and ($(tip)+(0.1,-0.2)+(0,-\t)$) .. cycle;
         
         % beaker
         \def\beakerwidth{0.6}
@@ -96,5 +94,20 @@ Titrering är ett sätt att ta reda på olika egenskaper hos en syra eller en ba
         \filldraw[very thick, color=cyan!80!blue, fill opacity=0.4, domain=-\beakerwidth:\beakerwidth] plot [samples=50, sharp corners] (\x, {0.015*sin((40*\x) r)-\beakerwater+0.1}) [rounded corners=5pt] -- (\beakerwidth,-\beakerwater) -- ($(\beakerwidth,-\beakery)+(0,-\beakerdepth)$) -- ($(-\beakerwidth,-\beakery)+(0,-\beakerdepth)$) -- (-\beakerwidth,-\beakerwater) [sharp corners] -- cycle;
         \draw[very thick, rounded corners=5pt, line cap=round] (-\beakerwidth,-\beakery) -- ($(-\beakerwidth,-\beakery)+(0,-\beakerdepth)$) -- ($(\beakerwidth,-\beakery)+(0,-\beakerdepth)$) -- (\beakerwidth,-\beakery);
     \end{tikzpicture}}
+\end{wrapfigure}
+Titrering är ett sätt att ta reda på olika egenskaper hos en syra eller en bas. Man kan exempelvis beräkna mängden lösta ämnen i bägaren, pH, $K_a$ eller $K_b$ från en titrering. Processen går ut på att man placerar någonting i en vattenlösning och i denna lösningen droppar man in en annan med en byrett. Det som sitter i bäger kan vara många olika saker. Vi har exemplet från Kemi 1 av ett rakblad som löses i bägare och den titreras med \(\ce{KMnO4}\) för att undersöka hur mycket \emph{titrand} behövdes för att uppnå ekvivalens. Alla titreringar baseras på ekvivalenser. Man vill droppa i titranden till man når en viss ekvivalens. Detta kan vara en fullständig neutralisation, ett slut på vissa reaktanter eller annat liknande. 
+\begin{exm}
+    \(0.206\, \mathrm{g}\: \text{rakblad löses i } \ce{H2SO4}\). Lösningen späds till 100 ml. 25 ml av lösningen titrerades med \(0.01\, \mathrm{M}\; \ce{KMnO_4}\) (kaliumpermanganat). Det krävdes 18 ml titrand för att nå ekvivalens. Reaktionen ser ut såhär:
+    \begin{equation*}
+        \ce{5Fe^2+ + KMnO4- + 8H+ -> 4H2O + Mn^2+ + 5Fe^3+}
+    \end{equation*}
+    \noindent Vi kommer fram till att det behövdes $0.01\, \mathrm{M} \cdot (18 \cdot 10^{-3})\, \mathrm{l} = 1.8 \cdot 10^{-4}\, \mathrm{mol}\: \ce{KMnO4}$ för att reagera med 25 ml av järnlösning. Det finns 5 gånger mer järn än permangant så vi hade därmed $1.8 \cdot 10^{-4} \cdot 5 = 9 \cdot 10^{-4}\, \mathrm{mol} \: \ce{Fe^2+}$ i 25 ml vilket motsvara $9 \cdot 10^{-4} \cdot 4 = 3.6 \cdot 10^{-3} \, \mathrm{mol}$ järn i 100 ml dvs. hela lösninge.
+\end{exm}
+
+\subsection{Titrerkurvor}
+En titrerkurva är en graf i 2 dimensioner som beskriver hur pH i en vattelösning förändras när en viss volym titrand tillsätts. Den har två viktiga punkter: \emph{halvtitrerpunkten} och \emph{ekvivalenspunkten}. En titrerkurva kan se ut såhär:
+\begin{figure*}[h]
+    \begin{tikzpicture}
+        
+    \end{tikzpicture}
 \end{figure*}
-ho la nief kdlaöen ofdpasjekf kaljeif daöeifj dkapeifj kdaöjf eiajfdk
