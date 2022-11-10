@@ -107,7 +107,12 @@ Titrering är ett sätt att ta reda på olika egenskaper hos en syra eller en ba
 \subsection{Titrerkurvor}
 En titrerkurva är en graf i 2 dimensioner som beskriver hur pH i en vattelösning förändras när en viss volym titrand tillsätts. Den har två viktiga punkter: \emph{halvtitrerpunkten} och \emph{ekvivalenspunkten}. En titrerkurva kan se ut såhär:
 \begin{figure*}[h]
-    \begin{tikzpicture}
-        
+    \centering
+    \begin{tikzpicture}[scale=1]
+        \hspace{-0.6cm}
+        \node at (0,0) [anchor=south west] {\scalebox{1}{\input{titrerkurva.pgf}}};
+        \fill[color=yellow!80!red, fill opacity=0.2] (2.4,4.9) rectangle (15.8,3.7) node[anchor=north east, fill opacity=1] {\Large{Buffertintervall}};
     \end{tikzpicture}
+    \caption{Titrerkurva}
+    \label{fig:titrerkurva}
 \end{figure*}
