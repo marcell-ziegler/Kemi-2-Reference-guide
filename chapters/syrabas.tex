@@ -22,7 +22,6 @@ Protolys\footnote{se s. 60 i boken}---från \emph{proto} för proton och forngre
 Man säger att en syra eller en bas kan antingen vara stark eller svag\footnote{se s. 63 samt uppgift 3:29--3.20 i boken}. Detta har faktiskt ingen korrelation med hur mycket den förändrar pH utan det betecknar om reaktionen är fullständig. En syra/bas som protolyseras helt när den placeras i vattelösning kallas stark och alla andra är svaga.
 
 \section{pH och pOH}
-
 Dessa är ett mått på hur syrligt eller basiskt en lösning är. pH är absolut standard med det finns anvädningar för pOH också. Skalan är logaritmisk med bas 10 och går från ca -1 till ca 14. Definitionen för de två storheterna är:
 \begin{align*}
     \mathrm{pH} &= -\log_{10}{\ce{[H3O+]}} \\
@@ -49,6 +48,10 @@ Man räknar på dessa konstanter ungefär som man räknar med $K$ (se \vref{sec:
 
 \subsection{Joner som syra eller bas}
 Ibland kan vissa joner från olika salter agera som syror eller baser. Man kan bestämma detta genom att dela upp saltet i dess beståndsdelar. Efter denna uppdelning kan man kolla upp $K_a$ och $K_b$ för dessa joner och avgöra om de reagerar som syra/bas och vilket av dem isåfall. Därefter är logiken för pH exakt samma som för ''vanliga'' syror.
+
+\subsection{Buffertar}
+\label{sec:buffertar}
+En buffert är en kombination av en syra och en korresponderande bas som tilsammans dämpar förändringar i pH när ny syra/bas tillförs lösningen. Detta uppnår de genom att reagera med de tillförda syrorna/baserna och bilda svagare varianter av de vilket i sin tur dämpar förändringen i pH. Mer specifikt förskjuter tillsatsen av hydroxid- eller oxoniumjoner jämvikten av bufferten. När bufferten är förbrukan kommer pH att ändras drastiskt (se \vref{fig:titrerkurva}) 
 
 \section{Titrering}
 \begin{wrapfigure}{l}{2cm}
@@ -105,7 +108,6 @@ Titrering är ett sätt att ta reda på olika egenskaper hos en syra eller en ba
 \end{exm}
 
 \subsection{Titrerkurvor}
-En titrerkurva är en graf i 2 dimensioner som beskriver hur pH i en vattelösning förändras när en viss volym titrand tillsätts. Den har två viktiga punkter: \emph{halvtitrerpunkten} och \emph{ekvivalenspunkten} (se \cref{fig:titrerkurva} som exempel).
 \begin{figure*}[h]
     \centering
     \begin{tikzpicture}[scale=1]
@@ -116,8 +118,18 @@ En titrerkurva är en graf i 2 dimensioner som beskriver hur pH i en vattelösni
     \caption{Titrerkurva}
     \label{fig:titrerkurva}
 \end{figure*}
+En titrerkurva är en graf i 2 dimensioner som beskriver hur pH i en vattelösning förändras när en viss volym titrand tillsätts. Den har två viktiga punkter: \emph{halvtitrerpunkten} och \emph{ekvivalenspunkten} (se \cref{fig:titrerkurva} som exempel).
 \subsubsection*{Ekvivalenspunkten}
 Denna punkt är där substansmängden av det lösta ämnet från börja är den samma som substansmängden av det intitrerade ämnet. Alltså är substansmängden syra från början samma som substansmängden tillsatt bas i exemplet. Vid denna punkt är all syra/bas från början neutraliserad
 
 \subsubsection*{Halvtitrerpunkten}
-Detta är punkten är volymen av tillsatt ämne är hälften av den volymen vid ekvivalenspunkten.
+Detta är punkten är volymen av tillsatt ämne är hälften av den volymen vid ekvivalenspunkten. Den har en intressant egenskap av att $\mathrm{p}K_{a} = \mathrm{pH}$
+eftersom $[\mathrm{Syra}] = [\mathrm{Bas}]$ vid just denna punkt då hälften av allt ursprungsämne är neutraliserat. Detta ger att:
+\begin{gather*}
+    K_a = \ce{\frac{\cancel{[\mathrm{Bas}]}[H3O+]}{\cancel{[\mathrm{Syra}]}}} = \ce{[H3O+]}\: \text{eftersom } \ce{[Bas] = [Syra]} \\
+    \tcboxmath{-\log{K_a} = -\log{[\mathrm{H_3O^+}]} \implies \mathrm{pH} = \mathrm{p}K_a}
+\end{gather*}
+Detta gäller naturligtvis också för syror som då titreras in i en bas. Dock får man $K_b$ istället.
+
+\subsubsection*{Buffertintervall}
+Detta är det intervallet där en viss lösning fungerar bäst som buffert (se \vref{sec:buffertar}). Lägg märke till att relativt störa volymer bas bidrar till relativt små ändringar i pH i exemplet.
