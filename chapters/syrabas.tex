@@ -105,14 +105,19 @@ Titrering är ett sätt att ta reda på olika egenskaper hos en syra eller en ba
 \end{exm}
 
 \subsection{Titrerkurvor}
-En titrerkurva är en graf i 2 dimensioner som beskriver hur pH i en vattelösning förändras när en viss volym titrand tillsätts. Den har två viktiga punkter: \emph{halvtitrerpunkten} och \emph{ekvivalenspunkten}. En titrerkurva kan se ut såhär:
+En titrerkurva är en graf i 2 dimensioner som beskriver hur pH i en vattelösning förändras när en viss volym titrand tillsätts. Den har två viktiga punkter: \emph{halvtitrerpunkten} och \emph{ekvivalenspunkten} (se \cref{fig:titrerkurva} som exempel).
 \begin{figure*}[h]
     \centering
     \begin{tikzpicture}[scale=1]
         \hspace{-0.6cm}
         \node at (0,0) [anchor=south west] {\scalebox{1}{\input{titrerkurva.pgf}}};
-        \fill[color=yellow!80!red, fill opacity=0.2] (2.4,4.9) rectangle (15.8,3.7) node[anchor=north east, fill opacity=1] {\Large{Buffertintervall}};
+        \fill[color=yellow!70!red, fill opacity=0.2] (1.85,4.9) rectangle (16,3) node[anchor=north east, fill opacity=1] {\Large{Buffertintervall}};
     \end{tikzpicture}
     \caption{Titrerkurva}
     \label{fig:titrerkurva}
 \end{figure*}
+\subsubsection*{Ekvivalenspunkten}
+Denna punkt är där substansmängden av det lösta ämnet från börja är den samma som substansmängden av det intitrerade ämnet. Alltså är substansmängden syra från början samma som substansmängden tillsatt bas i exemplet. Vid denna punkt är all syra/bas från början neutraliserad
+
+\subsubsection*{Halvtitrerpunkten}
+Detta är punkten är volymen av tillsatt ämne är hälften av den volymen vid ekvivalenspunkten.
