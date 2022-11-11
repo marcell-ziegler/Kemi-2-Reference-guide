@@ -1,27 +1,26 @@
-\newpage
 \section{Förskjutning av reaktioner}
 
 I uppgifter behöver man ofta bestämma hur en rekation kommer \emph{förskjutas} eller vilket håll den kommer ''gå mot''. Alla jämvikter vill till slut uppnå det jämviktsförhållande som är givet av deras $K$-värde under givna förhållanden. Om man börjar från ett tillstånd utan jämvikt eller om jämvikten rubbas kommer reaktionen att förskjutas. Detta innebär att antingen mängden reaktanter eller produkter kommer öka eller minska. När antalet produkter ökar jämfört med reaktanterna kallas det att reaktionen förskjuts åt höger och motsatsen kallas förskjutning åt vänster.
 
 \subsection{Reaktionskvoten}
 
-Förhållandet mellan produkter och reaktanter när det inte råder jämvikt beskrivs av \emph{reaktionskvoten} $Q$. Formeln för $Q$ är exakt samma som för $K$. Vid jämvikt är $Q=K$ men övrigt så är den antingen större eller mindre. Det finns två enkla regler angående $Q$-värdet\footnote{se s. 49--50 samt uppgift 3:9--3:10 i boken}:
+Förhållandet mellan produkter och reaktanter när det inte råder jämvikt beskrivs av \emph{reaktionskvoten} $Q$. Formeln för $Q$ är exakt samma som för $K$. Vid jämvikt är $Q=K$ men övrigt är den skiljt från $K$. Reaktionskvoten brukar också användas när man resonerar om nya jämviktsförhållande som följd av en rubbning (dessa betecknas som $Q$ eller $K_{ny}$). Det finns två enkla regler angående $Q$-värdet\footnote{se s. 49--50 samt uppgift 3:9--3:10 i boken}:
 \begin{align*}
-    &Q > K \Rightarrow \text{fler produkter eller färre reaktanter} \Rightarrow \text{förskjutning åt vänster} \\
-    &Q < K \Rightarrow \text{färre produkter eller fler reaktanter} \Rightarrow \text{förskjutning åt höger}
+    &Q > K \implies \text{fler produkter eller färre reaktanter} \implies \text{förskjutning åt vänster} \\
+    &Q < K \implies \text{färre produkter eller fler reaktanter} \implies \text{förskjutning åt höger}
 \end{align*}
 
 \subsection{Tillskott av ämnen}
 Den enklaste regeln är att jämvikten förskjuts åt det hållet som inte fick några nya ämnen. Mer specifikt kommer det se ut som följande förklaringar:
 
-\subsubsection[Reaktanter]{Tillskott av reaktanter}
+\subsubsection*{Tillskott av reaktanter}
 Om det finns en reaktion i jämvikt och fler reaktanter läggs till kommer $\prod^{n_{reakt}}_{n=1}[\mathrm{reaktant}_n]$ öka vilket innebär att $Q$ kommer minska (se \cref{eq:jmvkonstant}). Enligt definitionen ovan kommer reaktionen gå åt höger.
-\subsubsection[Produkter]{Tillskott av produkter}
+\subsubsection*{Tillskott av produkter}
 Om en reaktion i jämvikt får ett tillskott av produkter kommer $\prod^{n_{prod}}_{n=1}[\mathrm{produkt}_n]$ att öka vilket innebär att $Q$ kommer öka (se \cref{eq:jmvkonstant}). Enligt definitionen ovan kommer reaktionen gå åt vänster.
 
 \subsection{Tryckförändring}
 
-Vid en reaktion som involverar ämnen i gasform kommer trycket att förändra värdet på $K$. Detta beror på ideala gaslagen
+Vid en reaktion som involverar ämnen i gasform kommer trycket att förändra värdet på $K$. Detta beror på \emph{ideala gaslagen}:
 \begin{equation*}
     PV = nRT
 \end{equation*}
@@ -31,7 +30,7 @@ där $P = \text{tryck}$, $V = \text{volym}$, $n = \text{substansmängd}$, $R = \
 \end{equation*}
 vilket i sin tur innebär att
 \begin{equation*}
-    C \propto \frac{1}{RT} \text{ med faktorn } P
+    C \propto \frac{1}{RT} \text{ med proportionalitetskonstanten } P
 \end{equation*}
 $\frac{1}{RT}$ är konstant (vi använder konstant temperatur hittills) vilket medför att en förändring i proportionalitetskonstanten $P$ kommer innebära att
 \begin{equation*}
@@ -43,7 +42,7 @@ Allt detta innebär helt enkelt att vi kan ta koncentrationen av alla gaser och 
 \begin{exm}
     $\ce{2NO + O2 <=> 2NO2} \mathrm{\ ger \ } K_0=\frac{\mathrm{[NO_2]^2}}{\mathrm{[NO]^2[O_2]}}$
     \begin{equation*}
-        V \rightarrow \frac{V}{2} \Rightarrow P \rightarrow 2P \Rightarrow \frac{P_{ny}=2P_0}{P_0} = 2 = x
+        V \to \frac{V}{2} \implies P \to 2P_0 \implies \frac{P_{ny}=2P_0}{P_0} = 2 = x
     \end{equation*}
     \begin{align*}
         K_{ny} &= \frac{\prod^{n_{prod}}_{n=1} x \cdot [\mathrm{produkt}_n]}{\prod^{n_{reakt}}_{n=1} x \cdot [\mathrm{reaktant}_n]} \text{ (alla är gaser)} \\

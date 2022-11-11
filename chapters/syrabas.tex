@@ -2,18 +2,18 @@
 
 Protolys\footnote{se s. 60 i boken}---från \emph{proto} för proton och forngrekiskans \emph{lúsis} för lossa---innebär att det sker ett utbyte av en eller flera protoner ($\ce{H+}$ joner). Som angivet ovan kommer syror lossa en proton och baser ta emot en.
 \begin{exm}
-    Låt en syra A som innehåller en väteatom H reagera med vatten. Detta kallas också att den \emph{protolyseras} med vatten:
+    Låt en syra $\ce{A-}$ som innehåller en vätejon $\ce{H+}$ reagera med vatten. Detta kallas också att den \emph{protolyseras} med vatten:
     \begin{center}
         \begin{tikzpicture}
             \node at (0,0) {$\ce{AH + H2O <=> A- + H3O+}$};
-            \draw[very thick, color=red, ->, line cap=round] (-2,-0.3) .. controls (-1,-1) and (1,-1) .. node[anchor=north] {$\ce{H+}$} (1.8,-0.3);
+            \draw[very thick, color=red, <->, line cap=round] (-2,-0.3) .. controls (-1,-1) and (1,-1) .. node[anchor=north] {$\ce{H+}$} (1.8,-0.3);
         \end{tikzpicture}
     \end{center}
     Något mycket liknande sker när en bas B protolyseras:
     \begin{center}
         \begin{tikzpicture}
             \node at (0,0) {$\ce{B + H2O <=> BH+ + OH-}$};
-            \draw[very thick, color=red, ->, line cap=round] (-1.2,-0.3) .. controls (-0.7,-0.6) and (-0.1,-0.6) .. node[anchor=north] {$\ce{H+}$} (0.45,-0.3);
+            \draw[very thick, color=red, <->, line cap=round] (-1.2,-0.3) .. controls (-0.7,-0.6) and (-0.1,-0.6) .. node[anchor=north] {$\ce{H+}$} (0.45,-0.3);
         \end{tikzpicture}
     \end{center}
 \end{exm}
@@ -33,7 +33,7 @@ Ju större pH är desto mer basiskt och ju mindre den är desto mer syrligt. En 
 \]
 
 \section{Syra- och baskonstanten}
-Mycket likt jämviktskonstanten $K$ finns den en så kallad \emph{syrakonstant} $K_a$ och en \emph{baskonstant} $K_b$. Dessa beskriver hur fullständig en syra/bas protolyseras. Dessa värde existerar även för amfolyter---ämnen som är både syra och bas---och bestämmer då om de hellre reagerar som syra eller bas. Dessa värde är som $K$ för för protolysen men man bortser från [$\ce{H2O}$] alltså ser det ut såhär:
+Mycket likt jämviktskonstanten $K$ finns den en så kallad \emph{syrakonstant} $K_a$ och en \emph{baskonstant} $K_b$. Dessa beskriver hur fullständig en syra/bas protolyseras. Dessa värden existerar även för amfolyter---ämnen som är både syra och bas---och bestämmer då om de hellre reagerar som syra eller bas. Dessa värden är som $K$ för för protolysen men man bortser från [$\ce{H2O}$] alltså ser det ut såhär:
 \begin{align*}
     K &= \frac{\mathrm{[Bas]} \cdot [\ce{H3O+}]}{\cancel{\ce{[H2O]}} \cdot \mathrm{[Syra]}} \\
     K_a &= \frac{\mathrm{[Bas]} \cdot [\ce{H3O+}]}{\mathrm{[Syra]}} 
@@ -51,7 +51,7 @@ Ibland kan vissa joner från olika salter agera som syror eller baser. Man kan b
 
 \subsection{Buffertar}
 \label{sec:buffertar}
-En buffert är en kombination av en syra och en korresponderande bas som tilsammans dämpar förändringar i pH när ny syra/bas tillförs lösningen. Detta uppnår de genom att reagera med de tillförda syrorna/baserna och bilda svagare varianter av de vilket i sin tur dämpar förändringen i pH. Mer specifikt förskjuter tillsatsen av hydroxid- eller oxoniumjoner jämvikten av bufferten. När bufferten är förbrukan kommer pH att ändras drastiskt (se \vref{fig:titrerkurva}) 
+En buffert är en kombination av en syra och en korresponderande bas som tilsammans dämpar förändringar i pH när ny syra/bas tillförs lösningen. Detta uppnår de genom att reagera med de tillförda syrorna/baserna och bilda svagare varianter av de vilket i sin tur dämpar förändringen i pH. Mer specifikt förskjuter tillsatsen av hydroxid- eller oxoniumjoner jämvikten av bufferten. När bufferten är förbrukad kommer pH att ändras drastiskt (se \vref{fig:titrerkurva}) 
 
 \section{Titrering}
 \begin{wrapfigure}{l}{2cm}
@@ -100,11 +100,11 @@ En buffert är en kombination av en syra och en korresponderande bas som tilsamm
 \end{wrapfigure}
 Titrering är ett sätt att ta reda på olika egenskaper hos en syra eller en bas. Man kan exempelvis beräkna mängden lösta ämnen i bägaren, pH, $K_a$ eller $K_b$ från en titrering. Processen går ut på att man placerar någonting i en vattenlösning och i denna lösningen droppar man in en annan med en byrett. Det som sitter i bäger kan vara många olika saker. Vi har exemplet från Kemi 1 av ett rakblad som löses i bägare och den titreras med \(\ce{KMnO4}\) för att undersöka hur mycket \emph{titrand} behövdes för att uppnå ekvivalens. Alla titreringar baseras på ekvivalenser. Man vill droppa i titranden till man når en viss ekvivalens. Detta kan vara en fullständig neutralisation, ett slut på vissa reaktanter eller annat liknande. 
 \begin{exm}
-    \(0.206\, \mathrm{g}\: \text{rakblad löses i } \ce{H2SO4}\). Lösningen späds till 100 ml. 25 ml av lösningen titrerades med \(0.01\, \mathrm{M}\; \ce{KMnO_4}\) (kaliumpermanganat). Det krävdes 18 ml titrand för att nå ekvivalens. Reaktionen ser ut såhär:
+    \(0.206\, \mathrm{g}\: \text{rakblad löses i } \ce{H2SO4}\). Lösningen späds till 100 ml. 25 ml av lösningen titrerades med \(0.01\, \mathrm{M}\; \ce{KMnO_4}\) (kaliumpermanganat). Det krävdes 18 ml titrand för att nå ekvivalens. Reaktionen ser ut såhär: ($\ce{K+}$ är åskådarjon)
     \begin{equation*}
-        \ce{5Fe^2+ + KMnO4- + 8H+ -> 4H2O + Mn^2+ + 5Fe^3+}
+        \ce{5Fe^2+ + MnO4- + 8H+ -> 4H2O + Mn^2+ + 5Fe^3+}
     \end{equation*}
-    \noindent Vi kommer fram till att det behövdes $0.01\, \mathrm{M} \cdot (18 \cdot 10^{-3})\, \mathrm{l} = 1.8 \cdot 10^{-4}\, \mathrm{mol}\: \ce{KMnO4}$ för att reagera med 25 ml av järnlösning. Det finns 5 gånger mer järn än permangant så vi hade därmed $1.8 \cdot 10^{-4} \cdot 5 = 9 \cdot 10^{-4}\, \mathrm{mol} \: \ce{Fe^2+}$ i 25 ml vilket motsvara $9 \cdot 10^{-4} \cdot 4 = 3.6 \cdot 10^{-3} \, \mathrm{mol}$ järn i 100 ml dvs. hela lösninge.
+    \noindent Vi kommer fram till att det behövdes $0.01\, \mathrm{M} \cdot (18 \cdot 10^{-3})\, \mathrm{l} = 1.8 \cdot 10^{-4}\, \mathrm{mol}\: \ce{MnO4}$ för att reagera med 25 ml av järnlösning. Det finns 5 gånger mer järn än permangant så vi hade därmed $1.8 \cdot 10^{-4} \cdot 5 = 9 \cdot 10^{-4}\, \mathrm{mol} \: \ce{Fe^2+}$ i 25 ml vilket motsvara $9 \cdot 10^{-4} \cdot 4 = 3.6 \cdot 10^{-3} \, \mathrm{mol}$ järn i 100 ml dvs. hela lösningen.
 \end{exm}
 
 \subsection{Titrerkurvor}
@@ -115,15 +115,15 @@ Titrering är ett sätt att ta reda på olika egenskaper hos en syra eller en ba
         \node at (0,0) [anchor=south west] {\scalebox{1}{\input{titrerkurva.pgf}}};
         \fill[color=yellow!70!red, fill opacity=0.2] (1.85,4.9) rectangle (16,3) node[anchor=north east, fill opacity=1] {\Large{Buffertintervall}};
     \end{tikzpicture}
-    \caption{Titrerkurva}
+    \caption{Titrerkurva. $V_{eq} = V_{bas} \text{ vid ekvivalens och } n_0 = n_{syra} \text{ vid start}$.}
     \label{fig:titrerkurva}
 \end{figure*}
-En titrerkurva är en graf i 2 dimensioner som beskriver hur pH i en vattelösning förändras när en viss volym titrand tillsätts. Den har två viktiga punkter: \emph{halvtitrerpunkten} och \emph{ekvivalenspunkten} (se \cref{fig:titrerkurva} som exempel).
-\subsubsection{Ekvivalenspunkten}
-Denna punkt är där substansmängden av det lösta ämnet från börja är den samma som substansmängden av det intitrerade ämnet. Alltså är substansmängden syra från början samma som substansmängden tillsatt bas i exemplet. Vid denna punkt är all syra/bas från början neutraliserad
+\noindent En titrerkurva är en graf i 2 dimensioner som beskriver hur pH i en vattelösning förändras när en viss volym titrand tillsätts. Den har två viktiga punkter: \emph{halvtitrerpunkten} och \emph{ekvivalenspunkten} (se \cref{fig:titrerkurva} som exempel).
+\subsubsection*{Ekvivalenspunkten}
+Denna punkt är där substansmängden av det lösta ämnet från börja är den samma som substansmängden av det intitrerade ämnet. Alltså är substansmängden syra från början samma som substansmängden tillsatt bas i exemplet. Vid denna punkt är all syra/bas från början neutraliserad.
 
-\subsubsection{Halvtitrerpunkten}
-Detta är punkten är volymen av tillsatt ämne är hälften av den volymen vid ekvivalenspunkten. Den har en intressant egenskap av att $\mathrm{p}K_{a} = \mathrm{pH}$
+\subsubsection*{Halvtitrerpunkten}
+Detta är punkten där volymen av tillsatt ämne är hälften av volymen vid ekvivalenspunkten. Den har en intressant egenskap: att $\mathrm{p}K_{a} = \mathrm{pH}$
 eftersom $[\mathrm{Syra}] = [\mathrm{Bas}]$ vid just denna punkt då hälften av allt ursprungsämne är neutraliserat. Detta ger att:
 \begin{gather*}
     K_a = \ce{\frac{\cancel{[\mathrm{Bas}]}[H3O+]}{\cancel{[\mathrm{Syra}]}}} = \ce{[H3O+]}\: \text{eftersom } \ce{[Bas] = [Syra]} \\
@@ -132,4 +132,4 @@ eftersom $[\mathrm{Syra}] = [\mathrm{Bas}]$ vid just denna punkt då hälften av
 Detta gäller naturligtvis också för syror som då titreras in i en bas. Dock får man $K_b$ istället.
 
 \subsubsection{Buffertintervall}
-Detta är det intervallet där en viss lösning fungerar bäst som buffert (se \vref{sec:buffertar}). Lägg märke till att relativt störa volymer bas bidrar till relativt små ändringar i pH i exemplet.
+Detta är det intervallet där en viss lösning fungerar bäst som buffert (se \vref{sec:buffertar}). Lägg märke till att relativt störa volymer bas i detta intervall bidrar till relativt små ändringar i pH i exemplet.

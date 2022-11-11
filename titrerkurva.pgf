@@ -492,7 +492,7 @@
 \definecolor{textcolor}{rgb}{0.000000,0.501961,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=3.685673in,y=2.793083in,,base]{\color{textcolor}\rmfamily\fontsize{10.000000}{12.000000}\selectfont \large{\(\displaystyle n_{syra\: start} = n_{bas}\)}}%
+\pgftext[x=3.685673in,y=2.793083in,,base]{\color{textcolor}\rmfamily\fontsize{10.000000}{12.000000}\selectfont \large{\(\displaystyle n_{0} = n_{bas}\)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \definecolor{textcolor}{rgb}{1.000000,0.000000,0.000000}%
@@ -504,7 +504,7 @@
 \definecolor{textcolor}{rgb}{1.000000,0.000000,0.000000}%
 \pgfsetstrokecolor{textcolor}%
 \pgfsetfillcolor{textcolor}%
-\pgftext[x=2.824013in,y=0.798231in,,base]{\color{textcolor}\rmfamily\fontsize{10.000000}{12.000000}\selectfont \large{\(\displaystyle V_{bas} = \frac{V_{bas\: ekvivalens}}{2}\)}}%
+\pgftext[x=2.824013in,y=0.798231in,,base]{\color{textcolor}\rmfamily\fontsize{10.000000}{12.000000}\selectfont \large{\(\displaystyle V_{bas} = \frac{V_{eq}}{2}\)}}%
 \end{pgfscope}%
 \begin{pgfscope}%
 \pgfsetbuttcap%
