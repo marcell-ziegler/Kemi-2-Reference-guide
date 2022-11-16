@@ -10,7 +10,7 @@ Dessa är dock alla tvådimensionella diagram och molekylernas strukctur är fak
 \begin{center}
     \chemfig{H-[:30]C([:-50]<H)([:-20]<:H)-[:90]H}
 \end{center}
-På denna bild innebär \raisebox{3pt}{\chemfig{<[,0.5]}} att en atom ligger ''framför'' dess bundna partner medan \raisebox{3pt}{\chemfig{<:[,0.5]}} innebär att den är ''bakom''. Detta bildar då en tetraeeder i 3D och varje bindning har en vinkel av $109.47^\circ$ mellan varandra.
+På denna bild innebär \raisebox{3pt}{\chemfig{<[,0.5]}} att en atom ligger ''framför'' dess bundna partner medan \raisebox{3pt}{\chemfig{<:[,0.5]}} innebär att den är ''bakom''. Detta bildar då en tetraeeder i 3D och varje bindning har en vinkel av $109.47^\circ$ mellan varandra. Denna tetraederformation är standard för kolatomer och alla köfreningar försöker att upprätthålla kolets bindningsmönster. Detta leder til de sick-sackiga bindinigsmönstren som vi ser i kolväten och andra kolföreningar.
 \subsection{Alkaner}
 Alkaner är konväten som innehåller enbart enkla kovalenta bindningar mellan atomerna. De första 10 heter och ser ut som följande:
 \begin{center}
@@ -31,7 +31,57 @@ Alkaner är konväten som innehåller enbart enkla kovalenta bindningar mellan a
         Metan & Etan & Propan
     \end{tabular}}
 \end{center}
-Dessa är mycket bra att komma ihåg. de första tre alkanerna med strukturformler syns även nedan.
+Dessa är mycket bra att komma ihåg. De första fyra är gaser vid rumstemperatur medan de andra är vätskor. Utöver detta finns inget särskilt med dem i denna kurs.
+
+\subsection{Alkener}
+Samma sak som alkaner fast med minst en dubble kovalent bindning. Namnen är samma som alkaner fast en suffix -en läggs till, alltså met\underline{en}, et\underline{en} osv.
+
+\subsection{Alkyner}
+Återigen samma som alkaner fast med minst en trippel kovalent bindning. Namnen är samma fast med suffixen -yn, alltså met\underline{yn}, et\underline{yn} osv.
+
+\subsection{Förgreningar}
+\label{sec:grenar}
+Ett kolväte kan förgrena sig och få avvikelse från dess mest grundläggande form. Detta kan vara i form av flera kolatomer, en OH-grupp eller något av de många andra möjlighetererna. En förgrening ritas precis som vanligt på streckformeln. Här följer några exempel:
+
+\subsubsection*{Kolkedjor}
+När ett kolväte förgrenar sig med andra kolväten ritas bara vanliga streck. Exempelvis:
+\begin{center}
+    \chemfig{-[1]-[-1]-[1](-[2]-[1])-[-1]-[1]-[-1]}
+\end{center}
+Föregrening har ett namn, i exemplet ovan är det en etylgrupp. Namnen är samma som motsvarande alkan fast med en -yl ändelse så met\underline{yl}grupp för en avgrenad kol, prop\underline{yl}grupp för tre stycken osv. Dubbel- och trippelbundna kolvätegrenar finns, men de kommer vi inte riktigt behöva arbeta med.
+
+\subsubsection*{OH-grupper}
+En gren kan också vara en \emph{hydroxidgrupp} (OH-grupp). Dessa ritas ut med atomerna insatta (se nedan). När en OH-grupp finns bildas en alkohol.
+\begin{center}
+    \chemfig{-[1]-[-1](-[-2]OH)-[1]}
+\end{center}
+
+\subsubsection*{Andra ämnen}
+Alla andra icke-kol ämnen ritas precis som en OH-grupp och är inte en del av kursen för tillfället.
+
+% TODO: add section about naming hydrocarbons
+
+\subsection{Isomerer}
+En \emph{isomer} är en kolförening som har samma summaformel som en annan men har en anna struktur rent fysiskt. Isomerer kan bildas på många olika sätt men de främsta vi ska titta på är förgreningar, cis- och transisomerer, multipelbindningar och cykliska kolväten. Viktigast att komma ihåg är nog att spegelbilder av en specifik kolkedja inte är en isomer, det är en ''pannkaka'' som Tor brukar säga.
+
+\subsubsection{Förgreningar}
+Först av allt, läs \cref{sec:grenar}. Förgrenade kolföreningar (kolväten i denna kurs) kan enbart vara isomerer av sig själva om deras summaformel är samma, dvs. att totalt antal väte- och kolatomer är konstant. So exempelvis butan är en isomer till 2-metylpropan:
+\begin{center}
+    \begin{tikzpicture}
+        \node at (0,0) {\Huge{$\sim$}};
+        \node at (-3,0) {\chemfig{-[1]=[-1]-[1]}};
+        \node at (3,0) {\chemfig{-[1](-[2])-[-1]}};
+    \end{tikzpicture}
+\end{center}
+Detta kan vi se för att båda ha summaformeln \ce{C4H10}. Man räknar helt enkelt den totala antalet av varje atom (även de som inte är C/H) för att avgöra om grenade kolföreningar är isomerer.
+
+\subsubsection{Cis- och transisomerer}
+En kolatom som är bundet enkelt till en annan kolatom har förmågan att snurra sin bindning. Detta innebär att den 3-dimensionella strukture kan i verkligheten vara lite vad som helst:
+\begin{center}
+    \begin{tabular}{>{\centering\arraybackslash}m{0.2\textwidth} >{\centering\arraybackslash}m{0.1\textwidth} >{\centering\arraybackslash}m{0.2\textwidth} >{\centering\arraybackslash}m{0.1\textwidth} >{\centering\arraybackslash}m{0.2\textwidth}}
+        \chemfig{-[1]-[-1]-[1]} & \Huge{$\sim$} & \chemfig{-[1]-[3]-[5]} & \Huge{$\sim$} & \chemfig{--[-1]-[1]}
+    \end{tabular}
+\end{center}
 
 \subsection{Arener}
 En aren, alternativt ett aromatisk ämne, är ett cykliskt kolväte som binder med varannan binding dubbel. I mitten av denna ring kommer då elektronerna alltid att enbart kunna anta två olika konfigurationer. Detta leder till att de \emph{delokaliseras} och bildar ett ''medelvärde'' av deras positioner sen innan. De kommer alltså att finnas typ som ett samlat moln för alla kolatomer, likt en metallbindning. Det ser ut som följande för en hexanbas:
