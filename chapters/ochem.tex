@@ -26,7 +26,7 @@ Alkaner är konväten som innehåller enbart enkla kovalenta bindningar mellan a
             9. & Nonan & \ce{C9H20} \\
             10. & Dekan & \ce{C10H22}
     \end{tabular}}
-    \tcbox[title={De 10 första - struktur}]{\begin{tabular}{c >{\hspace{20pt}}c >{\hspace{20pt}}c}
+    \tcbox[title={De 3 första - struktur}]{\begin{tabular}{c >{\hspace{20pt}}c >{\hspace{20pt}}c}
         \chemfig{H-C([-2]-H)([2]-H)-H} & \chemfig{H-C([-2]-H)([2]-H)-C([-2]-H)([2]-H)-H} & \chemfig{H-C([-2]-H)([2]-H)-C([-2]-H)([2]-H)-C([-2]-H)([2]-H)-H} \\ \vspace{5pt} \\
         Metan & Etan & Propan
     \end{tabular}}
@@ -62,7 +62,7 @@ Alla andra icke-kol ämnen ritas precis som en OH-grupp och är inte en del av k
 % TODO: add section about naming hydrocarbons
 
 \subsection{Isomerer}
-En \emph{isomer} är en kolförening som har samma summaformel som en annan men har en anna struktur rent fysiskt. Isomerer kan bildas på många olika sätt men de främsta vi ska titta på är förgreningar, cis- och transisomerer, multipelbindningar och cykliska kolväten. Viktigast att komma ihåg är nog att spegelbilder av en specifik kolkedja inte är en isomer, det är en ''pannkaka'' som Tor brukar säga.
+En \emph{isomer} är en kolförening som har samma summaformel som en annan men har en anna struktur rent fysiskt. Isomerer kan bildas på många olika sätt men de främsta vi ska titta på är förgreningar, cis- och transisomerer, multipelbindningar och cykliska kolväten. Viktigast att komma ihåg är nog att spegelbilder av en specifik kolkedja inte är en isomer, det är en ''pannkaka'' som Tor brukar säga. Observera att matematikens likformighetstecken $\sim$ kommer användas för att visa när två föreningar är isomerer till varandra.
 
 \subsubsection{Förgreningar}
 Först av allt, läs \cref{sec:grenar}. Förgrenade kolföreningar (kolväten i denna kurs) kan enbart vara isomerer av sig själva om deras summaformel är samma, dvs. att totalt antal väte- och kolatomer är konstant. So exempelvis butan är en isomer till 2-metylpropan:
@@ -117,12 +117,37 @@ Alla dessa är isomerer med deras alkenvarianter då de har samma formler. Två 
 \subsection{Namngivning av kolväten}
 Det finns en del regler om hur namnet på ett kolväte ska bestämmas. Det första man alltid gör är att numrera den längsta fullständiga kolkedjan där multipelbindningar tar prioritet och då man vill göra numret som avvikelser får så litet som möjligt. Här följer några ''rätta'' exempel med varje kolatom i streckformeln ersatt med dess nummer:
 \begin{center}
-    \begin{tabular}{>{\centering\arraybackslash}m{0.32\textwidth} >{\centering\arraybackslash}m{0.32\textwidth} >{\centering\arraybackslash}m{0.32\textwidth}}
-        \begin{tcolorbox}[title={\centering 1}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{1-[1]2-[-1]3-[1]4-[-1]5}} \end{tcolorbox} & \begin{tcolorbox}[title={\centering 2}, height=4.5cm, valign=center, halign=center, width=5cm]{\chemfig{1-[1]2=[-1]3-[1]4-[-1]5}} \end{tcolorbox} & \begin{tcolorbox}[title={\centering 3}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{1-[1]2=[-1]3-[1]4([2]-)-[-1]5}} \end{tcolorbox} \\
-        \begin{tcolorbox}[title={\centering 4}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{1-[1]2(-[-1]-[1])=[2]3-[1]4}} \end{tcolorbox} & \begin{tcolorbox}[title={\centering 5}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{-[1]4(-[-1]5~[1]6-[-1]7)=[2]3-[1]2=1}} \end{tcolorbox} & \begin{tcolorbox}[title={\centering 6}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{1-[1]2(-[2])-[-1]3-[1]4}} \end{tcolorbox}
+    \begin{tabular}{>{\centering\arraybackslash}m{0.3\textwidth} >{\centering\arraybackslash}m{0.3\textwidth} >{\centering\arraybackslash}m{0.3\textwidth}}
+        \begin{tcolorbox}[title={\centering 1}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{1-[1]2-[-1]3-[1]4-[-1]5}} \end{tcolorbox} & \begin{tcolorbox}[title={\centering 2}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{1-[1]2=[-1]3-[1]4-[-1]5}} \end{tcolorbox} & \begin{tcolorbox}[title={\centering 3}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{5-[1]4-[-1]3-[1]2([2]-)-[-1]1}} \end{tcolorbox} \\
+        \begin{tcolorbox}[title={\centering 4}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{1-[1]2(-[-1]-[1])=[2]3-[1]4}} \end{tcolorbox} & \begin{tcolorbox}[title={\centering 5}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{-[1]4(-[-1]5~[1]6-[-1]7)=[2]3-[1]2=1}} \end{tcolorbox} & \begin{tcolorbox}[title={\centering 6}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{1*5(-2-3-4-5-)}} \end{tcolorbox}
     \end{tabular}
 \end{center}
-De onumrerade delarna är grenar. Efter detta så vill man skapa namn för dessa och detta följer några enkla regler.
+De onumrerade delarna är grenar. Efter detta så vill man skapa namn för dessa och detta följer några regler:
+\begin{enumerate}
+    \item Det finns alltid ett bindestreck mellan namn och siffror på avvikelser
+    \item Avvikelser följer varandra i alfabetisk ordning, undantag för följande som skrivs på ''stammen'':
+    \begin{enumerate}
+        \item Alkoholer
+        \item Den högsta graden av dubbelbindning
+        \item Den förgrening som hamnar alfabetiskt vid stammen
+        \item Cykliska kolväten
+    \end{enumerate}
+    \item Upprepade uppkomster av samma avvikelse får sina nummer sperarede med kommatecken istället för bindestreck
+    \begin{enumerate}
+        \item Upprepade uppkomster får en prefix di-, tri-, tetra- osv. för att visa hur många det finns
+    \end{enumerate}
+    \item Fögreningar får namnet av det kolvätet som de motsvarar med ändelsen -yl. Tors minnesregel är ''grenar ylar''.
+    \item Om en isomer är cis- eller trans kommer behöva sitta så att det är  tydligt vilken bindning den tillhör, en 100\% regen existerar inte för detta.
+\end{enumerate}
+Då det hade varit för svårt att göra ett exempel för varje möjliga fall så har jag tagit några av de vanligaste och ritat upp ovan i ruta 1--6. Deras korrekta namn följer:
+\begin{enumerate}
+    \item pentan
+    \item 2-penten
+    \item 2-metylpentan
+    \item 2-etyl-2-buten
+    \item 1,3-en-4-metyl-5-heptyn
+    \item cyklopentan
+\end{enumerate}
 
 
 \subsection{Arener}
@@ -135,7 +160,7 @@ En aren, alternativt ett aromatisk ämne, är ett cykliskt kolväte som binder m
     \end{tikzpicture}
 \end{center}
 
-I detta fall innebär $\sim$ att något är samma molekyl som något annat. Denna aren för hexan kallas \emph{bensen}. Ringen i mitten ska illustrera detta medelvärde av elektroner och visar helt enkelt att det är ett aromatiskt ämne. Ett annat intressant aromatiskt ämne är \emph{grafen} vilket är en stor platta av sammanvävna kol-hexagoner med aromatiska bindningar som sedan har en kant av väte. Detta ser ut såhär:
+Denna aren för hexan kallas \emph{bensen}. Ringen i mitten ska illustrera detta medelvärde av elektroner och visar helt enkelt att det är ett aromatiskt ämne. Ett annat intressant aromatiskt ämne är \emph{grafen} vilket är en stor platta av sammanvävna kol-hexagoner med aromatiska bindningar som sedan har en kant av väte. Detta ser ut såhär:
 \begin{center}
     \scalebox{0.8}{\chemfig[angle increment=30]{**6(([-3]**6(--([-5,0.5]-H)-([-3,0.5]-H)---))-(**6(--([-3,0.5]-H)-([-1,0.5]-H)---))-(**6(--([-1,0.5]-H)-([1,0.5]-H)---))-(**6(--([1,0.5]-H)-([3,0.5]-H)---))-(**6(--([3,0.5]-H)-([5,0.5]-H)---))-(**6(--([5,0.5]-H)-([7,0.5]-H)---))-)}}
 \end{center}
