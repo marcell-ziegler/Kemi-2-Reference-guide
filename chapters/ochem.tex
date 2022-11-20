@@ -1,0 +1,167 @@
+\section{Kolväten}
+Kolväten är organiska ämnen som är föreningar av enbart kol och väte. Det finns dock många ämnen som innehåller några enstaka extra ämnen som fortfarande räknas som kolväten, exempelvis alkoholer med en OH-grupp. Kolvätens struktur betecknas på två olika sätt. Antingen med traditionella strukturformler eller s.k. streckformler. En streckformel är till för att spara plats på papperet. Kolväten ritas upp i ett sick-sack-streck där varje hörn är en kolatom. Om det finns förgreningar eller andra avvikelser från den mest grundläggande formen av kolväten kommer det att ritas in. Här följer några exempel:
+\begin{center}
+    \begin{tabular}{c >{\hspace{20pt}}c >{\hspace{20pt}}c}
+        \chemfig{H-C([2]-H)([-2]-H)-C([2]-H)([-2]-H)-H} & \chemfig[angle increment=30]{-[1]-[-1]-[1]} & \chemfig[angle increment=30]{-[1]=[-1]([:-90]-OH)-[1]} \\ \vspace{5pt} \\
+        Strukturformel & Streckformel & Streckformel med avvikelser
+    \end{tabular}
+\end{center} 
+Dessa är dock alla tvådimensionella diagram och molekylernas strukctur är faktiskt tredimensionell. Detta är ett exempel på den tredimensionella strukturen på $\ce{CH4}$ (metan):
+\begin{center}
+    \chemfig{H-[:30]C([:-50]<H)([:-20]<:H)-[:90]H}
+\end{center}
+På denna bild innebär \raisebox{3pt}{\chemfig{<[,0.5]}} att en atom ligger ''framför'' dess bundna partner medan \raisebox{3pt}{\chemfig{<:[,0.5]}} innebär att den är ''bakom''. Detta bildar då en tetraeeder i 3D och varje bindning har en vinkel av $109.47^\circ$ mellan varandra. Denna tetraederformation är standard för kolatomer och alla köfreningar försöker att upprätthålla kolets bindningsmönster. Detta leder til de sick-sackiga bindinigsmönstren som vi ser i kolväten och andra kolföreningar.
+\subsection{Alkaner}
+Alkaner är konväten som innehåller enbart enkla kovalenta bindningar mellan atomerna. De första 10 heter och ser ut som följande:
+\begin{center}
+    \tcbox[title={De 10 första - namn}]{\begin{tabular}{r c l}
+            1. & Metan & \ce{CH4} \\
+            2. & Etan & \ce{C2H6} \\
+            3. & Propan & \ce{C3H8} \\
+            4. & Butan & \ce{C4H10} \\
+            5. & Pentan & \ce{C5H12} \\
+            6. & Hexan & \ce{C6H14} \\
+            7. & Heptan & \ce{C7H16} \\
+            8. & Oktan & \ce{C8H18} \\
+            9. & Nonan & \ce{C9H20} \\
+            10. & Dekan & \ce{C10H22}
+    \end{tabular}}
+    \tcbox[title={De 3 första - struktur}]{\begin{tabular}{c >{\hspace{20pt}}c >{\hspace{20pt}}c}
+        \chemfig{H-C([-2]-H)([2]-H)-H} & \chemfig{H-C([-2]-H)([2]-H)-C([-2]-H)([2]-H)-H} & \chemfig{H-C([-2]-H)([2]-H)-C([-2]-H)([2]-H)-C([-2]-H)([2]-H)-H} \\ \vspace{5pt} \\
+        Metan & Etan & Propan
+    \end{tabular}}
+\end{center}
+Dessa är mycket bra att komma ihåg. De första fyra är gaser vid rumstemperatur medan de andra är vätskor. Utöver detta finns inget särskilt med dem i denna kurs.
+
+\subsection{Alkener}
+Samma sak som alkaner fast med minst en dubble kovalent bindning. Namnen är samma som alkaner fast en suffix -en läggs till, alltså met\underline{en}, et\underline{en} osv.
+
+\subsection{Alkyner}
+Återigen samma som alkaner fast med minst en trippel kovalent bindning. Namnen är samma fast med suffixen -yn, alltså met\underline{yn}, et\underline{yn} osv.
+
+\subsection{Förgreningar}
+\label{sec:grenar}
+Ett kolväte kan förgrena sig och få avvikelse från dess mest grundläggande form. Detta kan vara i form av flera kolatomer, en OH-grupp eller något av de många andra möjlighetererna. En förgrening ritas precis som vanligt på streckformeln. Här följer några exempel:
+
+\subsubsection*{Kolkedjor}
+När ett kolväte förgrenar sig med andra kolväten ritas bara vanliga streck. Exempelvis:
+\begin{center}
+    \chemfig{-[1]-[-1]-[1](-[2]-[1])-[-1]-[1]-[-1]}
+\end{center}
+Föregrening har ett namn, i exemplet ovan är det en etylgrupp. Namnen är samma som motsvarande alkan fast med en -yl ändelse så met\underline{yl}grupp för en avgrenad kol, prop\underline{yl}grupp för tre stycken osv. Dubbel- och trippelbundna kolvätegrenar finns, men de kommer vi inte riktigt behöva arbeta med.
+
+\subsubsection*{OH-grupper}
+En gren kan också vara en \emph{hydroxidgrupp} (OH-grupp). Dessa ritas ut med atomerna insatta (se nedan). När en OH-grupp finns bildas en alkohol.
+\begin{center}
+    \chemfig{-[1]-[-1](-[-2]OH)-[1]}
+\end{center}
+
+\subsubsection*{Andra ämnen}
+Alla andra icke-kol ämnen ritas precis som en OH-grupp och är inte en del av kursen för tillfället.
+
+% TODO: add section about naming hydrocarbons
+
+\subsection{Isomerer}
+En \emph{isomer} är en kolförening som har samma summaformel som en annan men har en anna struktur rent fysiskt. Isomerer kan bildas på många olika sätt men de främsta vi ska titta på är förgreningar, cis- och transisomerer, multipelbindningar och cykliska kolväten. Viktigast att komma ihåg är nog att spegelbilder av en specifik kolkedja inte är en isomer, det är en ''pannkaka'' som Tor brukar säga. Observera att matematikens likformighetstecken $\sim$ kommer användas för att visa när två föreningar är isomerer till varandra.
+
+\subsubsection{Förgreningar}
+Först av allt, läs \cref{sec:grenar}. Förgrenade kolföreningar (kolväten i denna kurs) kan enbart vara isomerer av sig själva om deras summaformel är samma, dvs. att totalt antal väte- och kolatomer är konstant. So exempelvis butan är en isomer till 2-metylpropan:
+\begin{center}
+    \begin{tikzpicture}
+        \node at (0,0) {\Huge{$\sim$}};
+        \node at (-3,0) {\chemfig{-[1]=[-1]-[1]}};
+        \node at (3,0) {\chemfig{-[1](-[2])-[-1]}};
+    \end{tikzpicture}
+\end{center}
+Detta kan vi se för att båda ha summaformeln \ce{C4H10}. Man räknar helt enkelt den totala antalet av varje atom (även de som inte är C/H) för att avgöra om grenade kolföreningar är isomerer.
+
+\subsubsection{Cis- och transisomerer}
+En kolatom som är bundet enkelt till en annan kolatom har förmågan att snurra sin bindning. Detta innebär att den 3-dimensionella strukture kan i verkligheten vara lite vad som helst:
+\begin{center}
+    \begin{tabular}{>{\centering\arraybackslash}m{0.2\textwidth} >{\centering\arraybackslash}m{0.1\textwidth} >{\centering\arraybackslash}m{0.2\textwidth} >{\centering\arraybackslash}m{0.1\textwidth} >{\centering\arraybackslash}m{0.2\textwidth}}
+        \chemfig{-[1]-[-1]-[1]} & \Huge{$\sim$} & \chemfig{-[1]-[3]-[5]} & \Huge{$\sim$} & \chemfig{--[-1]-[1]}
+    \end{tabular}
+\end{center}
+Alla multipelbindningar har inte denna möjlighet dock. Detta innebär att dessa bindiningar är stela och kan inte rotera. Detta gör att alla unika rotationer är unika isomerer. Dämnen där kol binder ''åt samma håll'' från en binding kalla cis-isomerer och de med motsatt riktning kallas för trans-isomerer:
+\vspace{5pt}
+\begin{center}
+    \begin{tabular}{>{\centering\arraybackslash}m{0.3\textwidth} >{\centering\arraybackslash\hspace{20pt}}m{0.3\textwidth} >{\centering\arraybackslash\hspace{20pt}}m{0.3\textwidth}}
+        \begin{tikzpicture}
+            \node at (0,0) {\chemfig{-[1]=-[1]}};
+            \draw[thick, color=red, ->] (-0.5, -0.1) -- (-1.35,-0.95) node[anchor=north west] {Ner};
+            \draw[thick, color=red, ->] (0.5,0.1) -- (1.3,0.95) node[anchor=south east] {Upp};
+        \end{tikzpicture} & \Huge{$\neq$} & 
+        \begin{tikzpicture}
+            \node at (0,0) {\chemfig{-[1]=-[-1]}};
+            \draw[thick, color=red, ->] (-0.5, 0.25) -- (-1.35,-0.6) node[anchor=north west] {Ner};
+            \draw[thick, color=red, ->] (0.5, 0.25) -- (1.35,-0.6) node[anchor=north east] {Ner};
+        \end{tikzpicture} \\
+        Trans-isomer & & Cis-isomer
+    \end{tabular}
+\end{center}
+\vspace{5pt}
+Samma logik gäller för trippelbindningen. Man utverderar rotationen för varje multipelbindning enskilt, därmed kan en molekyl innehåla både cis- och transdelar.
+
+\subsubsection{Multipelbindningar}
+Här gäller samma regler som med förgreningar. Så länge summaformeln är samma är de två molekylerna isomerer. De kan snurra hursomhelst, ha fler eller färre multipelbindningar och ha bindningarna på olika stället, men de är ändå isomerer.
+
+\subsubsection{Cykliska kolväten}
+Ett cykliskt kolväte är ett kolväte som binder i en ring. Här kommer några exempel:
+\begin{center}
+    \begin{tabular}{c c c c c}
+        \chemfig{*3(---)} & \chemfig{*4(----)} & \chemfig{*5(-----)} & \chemfig{*6(------)} & \chemfig{*7(-------)}
+    \end{tabular}
+\end{center}
+Alla dessa är isomerer med deras alkenvarianter då de har samma formler. Två väte försvinner när ringen sluts. Formen är alltid en regelbunden polygon med samma antal sidor som kolatomer. Ju mindre ringen är desto mindre stabil är den generellt. En cyklopropan eller cyklobutan har inte rätt bindningsvinklar, $60^\circ$ och $90^\circ$ istället för ($109.47^\circ$). De andra ringerna är inte helt platta, till skillnad från de första tre, men de fungerar ändå och har sin fomr så att den kan ha rätta bindningsvinklar.
+
+\subsection{Namngivning av kolväten}
+Det finns en del regler om hur namnet på ett kolväte ska bestämmas. Det första man alltid gör är att numrera den längsta fullständiga kolkedjan där multipelbindningar tar prioritet och då man vill göra numret som avvikelser får så litet som möjligt. Här följer några ''rätta'' exempel med varje kolatom i streckformeln ersatt med dess nummer:
+\begin{center}
+    \begin{tabular}{>{\centering\arraybackslash}m{0.3\textwidth} >{\centering\arraybackslash}m{0.3\textwidth} >{\centering\arraybackslash}m{0.3\textwidth}}
+        \begin{tcolorbox}[title={\centering 1}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{1-[1]2-[-1]3-[1]4-[-1]5}} \end{tcolorbox} & \begin{tcolorbox}[title={\centering 2}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{1-[1]2=[-1]3-[1]4-[-1]5}} \end{tcolorbox} & \begin{tcolorbox}[title={\centering 3}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{5-[1]4-[-1]3-[1]2([2]-)-[-1]1}} \end{tcolorbox} \\
+        \begin{tcolorbox}[title={\centering 4}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{1-[1]2(-[-1]-[1])=[2]3-[1]4}} \end{tcolorbox} & \begin{tcolorbox}[title={\centering 5}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{-[1]4(-[-1]5~[1]6-[-1]7)=[2]3-[1]2=1}} \end{tcolorbox} & \begin{tcolorbox}[title={\centering 6}, height=4.5cm, valign=center, halign=center, width=4.95cm]{\chemfig{1*5(-2-3-4-5-)}} \end{tcolorbox}
+    \end{tabular}
+\end{center}
+De onumrerade delarna är grenar. Efter detta så vill man skapa namn för dessa och detta följer några regler:
+\begin{enumerate}
+    \item Det finns alltid ett bindestreck mellan namn och siffror på avvikelser
+    \item Avvikelser följer varandra i alfabetisk ordning, undantag för följande som skrivs på ''stammen'':
+    \begin{enumerate}
+        \item Alkoholer
+        \item Den högsta graden av dubbelbindning
+        \item Den förgrening som hamnar alfabetiskt vid stammen
+        \item Cykliska kolväten
+    \end{enumerate}
+    \item Upprepade uppkomster av samma avvikelse får sina nummer sperarede med kommatecken istället för bindestreck
+    \begin{enumerate}
+        \item Upprepade uppkomster får en prefix di-, tri-, tetra- osv. för att visa hur många det finns
+    \end{enumerate}
+    \item Fögreningar får namnet av det kolvätet som de motsvarar med ändelsen -yl. Tors minnesregel är ''grenar ylar''.
+    \item Om en isomer är cis- eller trans kommer behöva sitta så att det är  tydligt vilken bindning den tillhör, en 100\% regen existerar inte för detta.
+\end{enumerate}
+Då det hade varit för svårt att göra ett exempel för varje möjliga fall så har jag tagit några av de vanligaste och ritat upp ovan i ruta 1--6. Deras korrekta namn följer:
+\begin{enumerate}
+    \item pentan
+    \item 2-penten
+    \item 2-metylpentan
+    \item 2-etyl-2-buten
+    \item 1,3-en-4-metyl-5-heptyn
+    \item cyklopentan
+\end{enumerate}
+
+
+\subsection{Arener}
+En aren, alternativt ett aromatisk ämne, är ett cykliskt kolväte som binder med varannan binding dubbel. I mitten av denna ring kommer då elektronerna alltid att enbart kunna anta två olika konfigurationer. Detta leder till att de \emph{delokaliseras} och bildar ett ''medelvärde'' av deras positioner sen innan. De kommer alltså att finnas typ som ett samlat moln för alla kolatomer, likt en metallbindning. Det ser ut som följande för en hexanbas:
+\begin{center}
+    \begin{tikzpicture}
+        \node at (-2.25,0) {\chemfig{*6(------)}};
+        \draw[->] (0,00) ++(-1.5/2,0) -- ++(1.5,0);
+        \draw (2.25,0) node {\chemfig{*6(=-=-=-)}} ++(2-0.25,0) node {\Huge{$\sim$}} ++(2-0.25,0) node {\chemfig{*6(-=-=-=)}} ++(2-0.25,0) node {\Huge{$\sim$}} ++(2-0.25,0) node {\chemfig{**6(------)}};
+    \end{tikzpicture}
+\end{center}
+
+Denna aren för hexan kallas \emph{bensen}. Ringen i mitten ska illustrera detta medelvärde av elektroner och visar helt enkelt att det är ett aromatiskt ämne. Ett annat intressant aromatiskt ämne är \emph{grafen} vilket är en stor platta av sammanvävna kol-hexagoner med aromatiska bindningar som sedan har en kant av väte. Detta ser ut såhär:
+\begin{center}
+    \scalebox{0.8}{\chemfig[angle increment=30]{**6(([-3]**6(--([-5,0.5]-H)-([-3,0.5]-H)---))-(**6(--([-3,0.5]-H)-([-1,0.5]-H)---))-(**6(--([-1,0.5]-H)-([1,0.5]-H)---))-(**6(--([1,0.5]-H)-([3,0.5]-H)---))-(**6(--([3,0.5]-H)-([5,0.5]-H)---))-(**6(--([5,0.5]-H)-([7,0.5]-H)---))-)}}
+\end{center}
+I verkligheten expanderar detta mycket större, men i brist på plats är detta en lite del av en hypotetisk grafenskiva. Väte kommer enbart uppstå längs med kanterna på skivan.
