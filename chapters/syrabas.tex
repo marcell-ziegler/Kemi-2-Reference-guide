@@ -49,6 +49,18 @@ Man räknar på dessa konstanter ungefär som man räknar med $K$ (se \vref{sec:
 \subsection{Joner som syra eller bas}
 Ibland kan vissa joner från olika salter agera som syror eller baser. Man kan bestämma detta genom att dela upp saltet i dess beståndsdelar. Efter denna uppdelning kan man kolla upp $K_a$ och $K_b$ för dessa joner och avgöra om de reagerar som syra/bas och vilket av dem isåfall. Därefter är logiken för pH exakt samma som för ''vanliga'' syror.
 
+Detta beror på olika saker, men för metaller vet vi att de kan bilda s.k. \emph{komplex}. Detta är någon form av mellanting mella molekyl och hydratiserad jon. Bindningarna kommer vara lite starkare än en jon-dipolbindning men svagare än en kovalent.
+\begin{exm}
+    Ta aluminiumklorid (\ce{AlCl3}) och sätt den i vatten. Från början verkar det som att ingen kommer att hända eftersom varken aluminiumjonen eller kloridjonen kan ta upp eller avgen en vätejon, men det sker faktiskt någonting. Aluminiumet kommer att bilda att komplex med vatten:
+    \begin{center}
+        \chemfig[angle increment=60]{Al^{3+}([1]-H_2O)([2]-H_2O)([3]-H_2O)([4]-H_2O)([5]-H_2O)-H_2O}
+    \end{center}
+    Detta komplex är ju 3+ laddat vilket innebär att den kan släppa iväg några \ce{H+}. Detta gör att den kan reagera med vatten för att bilda \ce{H3O+}: (Komplexet förkortas \ce{Al(H2O)6^{3+}})
+    \begin{center}
+        \ce{Al(H2O)6^{3+} + H2O <=> AlOH(H2O)5^{2+} + H3O+}
+    \end{center}
+\end{exm}
+
 \subsection{Buffertar}
 \label{sec:buffertar}
 En buffert är en kombination av en syra och en korresponderande bas som tilsammans dämpar förändringar i pH när ny syra/bas tillförs lösningen. Detta uppnår de genom att reagera med de tillförda syrorna/baserna och bilda svagare varianter av de vilket i sin tur dämpar förändringen i pH. Mer specifikt förskjuter tillsatsen av hydroxid- eller oxoniumjoner jämvikten av bufferten. När bufferten är förbrukad kommer pH att ändras drastiskt (se \vref{fig:titrerkurva}) 
